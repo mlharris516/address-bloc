@@ -58,6 +58,6 @@ module.exports = class MenuController {
     getDate() {
         const currentTS = new Date();
         console.log(currentTS);
-        this.main();
+        return;
     }
 }
