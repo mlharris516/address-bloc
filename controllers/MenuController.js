@@ -10,6 +10,7 @@ module.exports = class MenuController {
                 choices: [
                     "Add new contact",
                     "Get Date",
+                    "Remind Me",
                     "Exit"
                 ]
             }
@@ -29,6 +30,9 @@ module.exports = class MenuController {
                     break;
                 case "Exit":
                     this.exit();
+                    break;
+                case "Remind Me":
+                    this.remindMe();
                     break;
                 default:
                     console.log("Invalid input");
@@ -55,9 +59,17 @@ module.exports = class MenuController {
         process.exit();
     }
 
+    getContactCount() {
+        return this.contacts.length;
+    }
+
     getDate() {
         const currentTS = new Date();
         console.log(currentTS);
         this.main();
+    }
+
+    remindMe() {
+        return ("Learning is a life-long pursuit");
     }
 }
