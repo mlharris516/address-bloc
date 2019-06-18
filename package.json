@@ -1,0 +1,25 @@
+{
+  "name": "address-bloc",
+  "version": "1.0.0",
+  "description": "An application to model an address book in Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "export NODE_ENV=test&& jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlharris516/address-bloc.git"
+  },
+  "author": "Meredith Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlharris516/address-bloc/issues"
+  },
+  "homepage": "https://github.com/mlharris516/address-bloc#readme",
+  "dependencies": {
+    "inquirer": "^5.1.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.1.0"
+  }
+}
